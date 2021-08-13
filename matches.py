@@ -3,14 +3,11 @@ class matches:
     result = []
     def __init__(self, inputstr):
         self.inputstr = inputstr
-        print(type(self.inputstr))
-        print(self.inputstr)
         
     def find(self, findstr):
         base = len(findstr)
         self.permute(list(findstr), 0, len(findstr))
         perm = self.result
-        print(self.result)
         return list(set(list(self.inputstr)) & set(perm))
     
     def permute(self, data, i, length):
