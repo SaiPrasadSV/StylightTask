@@ -1,6 +1,7 @@
 #Step 1: Class "matches" Created to check
 class matches:
     result = []
+    a=[]
     def __init__(self, inputstr):
         self.inputstr = inputstr
         print(type(self.inputstr))
